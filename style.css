@@ -12,37 +12,36 @@
 
 
 .navbar{
-  display:flex;
-  justify-content: center;
   position:sticky;
   top:0;
   background: white;
   z-index: 1;
 }
+
   .session1--navbar{
     display:flex;
-    justify-content:space-between;
-    padding: 10px;
+    justify-content:space-around;
     align-items: center;
-    width:80%;
     margin:20px;
-    
-    
   }
-
+.navbar--menu{
+  display:none;
+}
   .navbar__title{
      display:flex;
-     justify-content: flex-start;
-     text-align: center;
+     justify-content: space-between;
+     align-items: center;
      gap:10px;
+     margin:10px;
   }
+
 
   .navbar__categories{
         display:flex;
         gap:20px;
         font-size: larger;
         font-weight: bold;
-        justify-content: center;
+        justify-content: space-between;
   }
 
   .navbar__icons{
@@ -66,13 +65,10 @@
     padding:10px;
 }
 
-.session2{
-    display:flex;
-    align-items: center;
-    justify-content: center;
+.session2--where {
+    text-align: center;
     margin:20px;
     font-size: 30px;
-
 }
 
 .session3{
@@ -87,7 +83,7 @@
   align-items: center;
   margin:5px;
   padding:10px;
-
+  
 }
 
 .categories__1 p,.categories__2 p,.categories__3 p,.categories__4 p,
@@ -106,12 +102,16 @@
 
 .session4{
   display:flex;
+  justify-content: center;
+}
+
+.session4--searchbar{
+  display:flex;
   border: solid black 1px;
   padding:10px;
   border-radius: 20px;
-  width: 60%;
-  margin:0 auto;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  width:60%;
 }
 .session4--search input{
   border: none;
@@ -123,13 +123,13 @@
       display:flex;
       flex-grow: 1;
       align-items: center;
+   
 }
 .session4--para{
   background-color:rgba(31, 232, 51, 0.8);
   padding:10px;
   border-radius: 10px;
   cursor: pointer;
-  
 }
 
 .session4--search input:focus{
@@ -143,31 +143,30 @@
 }
 .session5 img{
   width:80%;
-  justify-content: center;
-  align-items: center;
   margin:50px;
   border-radius: 10px;
 }
+.session6{
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.session6--title p{
-  margin-top: 10px;
-}
-.session6--content{
-  margin-left:10%;
-}
 
 .session6--awards{
   display:flex;
   flex-wrap: wrap;
-  flex-basis:10%;
-  gap:10px;
+  justify-content: space-between;
   margin-top: 20px;
+  gap:10px;
 }
+
 .session6--awardimag1 img,.session6--awardimag2 img,
 .session6--awardimag3 img,.session6--awardimag4 img{
   width:300px;
   height:300px;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .session6--awardimag1,.session6--awardimag2,.session6--awardimag3,
@@ -182,13 +181,13 @@
   color:black;
   width: 50px;
 }
-
 .session7{
-  margin-top: 60px;
+  margin-top:40px;
 }
 .session7--content{
-  margin-left:10%;
-}
+  margin-left: 10%;
+  }
+  
 .session7--button{
   margin-top: 20px;
   padding:20px;
@@ -210,7 +209,10 @@
 }
 
 .session8{
-  margin-top: 100px;
+  margin-top: 50px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 .session8--title{
   margin-top: 20px;
@@ -219,17 +221,13 @@
 .session8--title p{
   margin-top: 10px;
 }
-.session8--content{
-  margin-left:10%;
-}
 
 .session8--awards{
   display:flex;
   flex-wrap: wrap;
-  flex-basis:10%;
+  flex-basis:20%;
   gap:10px;
   margin-top: 20px;
-  width:100%;
 }
 
 .session8--awardimag1 img,.session8--awardimag2 img,
@@ -268,6 +266,8 @@
 
 .session9{
   margin-top: 100px;
+  display:flex;
+  justify-content: center;
 }
 .session9--title{
   margin-top: 20px;
@@ -276,17 +276,14 @@
 .session9--title p{
   margin-top: 10px;
 }
-.session9--content{
-  margin-left:10%;
-}
 
 .session9--awards{
   display:flex;
   flex-wrap: wrap;
-  flex-basis:10%;
   gap:10px;
   margin-top: 20px;
   width:100%;
+
 }
 
 .session9--awardimag1 img,.session9--awardimag2 img,
@@ -326,6 +323,9 @@
 
 .session10{
   margin-top: 100px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 .session10--title{
   margin-top: 20px;
@@ -334,17 +334,15 @@
 .session10--title p{
   margin-top: 10px;
 }
-.session10--content{
-  margin-left:10%;
-}
+
 
 .session10--awards{
   display:flex;
   flex-wrap: wrap;
-  flex-basis:10%;
   gap:10px;
   margin-top: 20px;
   width:100%;
+  
 }
 
 .session10--awardimag1 img,.session10--awardimag2 img,
@@ -352,7 +350,6 @@
   width:300px;
   height:300px;
   border-radius: 10px;
-  position:relative;
 }
 
 .session10--awardimag1,.session10--awardimag2,.session10--awardimag3,
@@ -384,21 +381,27 @@
 .session11{
   margin-top: 100px;
   background:blanchedalmond;
+  display:flex;
+  justify-content: center;
 }
-.session11--title{
+.session11--contents{
+  display:flex;
+  justify-content: center;
+}
+.session11--title h2{
   padding-top: 50PX;
 }
-.session11--content{
-  margin-left:10%;
+
+.session11--awards{
+  display:flex;
+  justify-content: center;
 }
 
 .session11--awards{
   display:flex;
   flex-wrap: wrap;
-  flex-basis:20%;
   gap:10px;
   margin-top: 20px;
-  width:100%;
 }
 
 .session11--awardimag1 img,.session11--awardimag2 img,
@@ -445,19 +448,21 @@
    text-align: center;
 }
 
-
+.session12{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
 .session12--title p{
   margin-top: 10px;
 }
 .session12--content{
-  margin-left:10%;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .session12--awards{
   display:flex;
   flex-wrap: wrap;
-  flex-basis:10%;
   gap:10px;
   margin-top: 20px;
 }
@@ -482,18 +487,14 @@
   width: 50px;
 }
 
-.session13-- video{
-  width:80%;
+.session13{
   display:flex;
   margin-top:50px;
-  margin-left:10%;
+  justify-content: center;
 }
 
-.session13--content{
-  width:80%;
-  margin-top:10px;
-  margin-left:10%;
-  text-indent: 10px;
+.session13-- video{
+  width:100%;
 }
 
 .session14{
@@ -507,15 +508,12 @@
   margin-top: 50px;
   background:bisque;
   display:flex;
-  justify-content: space-between;
+  justify-content:center;
   position:relative;
 }
-
 .fotter--category1{
+  border: solid black 1px;
   display:flex;
-  padding:10px;
-  justify-content: center;
-  margin-left: 10%;
 }
 
 .fotter--content1,.fotter--content2,.fotter--content3{  
